@@ -35,7 +35,10 @@ if (length(stata_files) > 0) {
   stata_file <- file.path(current_dir, stata_files[1])
   data <- read_dta(stata_file)
   # Define the path for the CSV file
-  csv_file <- file.path(current_dir, paste0(tools::file_path_sans_ext(stata_files[1]), ".csv"))
+  csv_file <- file.path(
+    current_dir,
+    paste0(tools::file_path_sans_ext(stata_files[1]), ".csv")
+  )
   # Write the data to CSV
   write.csv(data, file = csv_file, row.names = FALSE)
   cat("Stata file has been successfully converted to CSV:", csv_file, "\n")
