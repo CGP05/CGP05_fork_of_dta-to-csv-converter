@@ -5,7 +5,7 @@ date: "5/2/2024"
 output: html_document
 ---
 
-I've written this file to look in the same folder as the folder that the script is in and check to see if there are any stata files. If there are the script will read in the stata file and then write it to csv (which can be opened by Excel).
+I've written this file to look in the same folder as the folder that the script is in and check to see if there are any Stata files. If there are the script will read in the Stata file and then write it to csv (which can be opened by Excel).
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
