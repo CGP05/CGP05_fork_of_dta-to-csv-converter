@@ -32,7 +32,7 @@ stata_files <- files[grep("\\.dta$", files)]
 
 if (length(stata_files) > 0) {
   for (stata_file_name in stata_files) {
-    # Read each Stata file
+    # Read each Stata file (for loop)
     stata_file <- file.path(current_dir, stata_file_name)
     data <- read_dta(stata_file)
 
