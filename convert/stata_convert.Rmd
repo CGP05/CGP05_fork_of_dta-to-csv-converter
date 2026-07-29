@@ -44,9 +44,9 @@ if (length(stata_files) > 0) {
 
     # Write the data to CSV
     write.csv(data, file = csv_file, row.names = FALSE)
-    cat("Stata file has been successfully converted to CSV:", csv_file, "\n")
+    cat("Stata files have been successfully converted to CSV:", csv_file, "\n")
   }
 } else {
-  cat("No Stata file found in the current directory.\n")
+  cat("No Stata files found in the current directory.\n")
 }
 ```
