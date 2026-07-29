@@ -22,7 +22,7 @@ if (!requireNamespace("haven", quietly = TRUE)) {
 library(haven)
 
 # Get the path to the current directory
-current_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+current_dir <-  getwd()
 
 # List all files in the current directory
 files <- list.files(current_dir)
